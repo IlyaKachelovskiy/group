@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group/core/constants/app_theme.dart';
 import 'package:group/presentation/screens/splash/splash_screen.dart';
 
 class GroupApp extends StatelessWidget {
@@ -6,9 +7,9 @@ class GroupApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      // theme: AppTheme().defaultTheme,
-      home: SplashScreen(),
+    return MaterialApp(
+      theme: AppTheme().defaultTheme,
+      home: const SplashScreen(),
     );
   }
 }
