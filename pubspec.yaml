@@ -25,7 +25,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/splash.png
+    - assets/images/profile_avatar.png
+    - assets/images/splash_screen.png
 
   fonts:
     - family: Mulish
