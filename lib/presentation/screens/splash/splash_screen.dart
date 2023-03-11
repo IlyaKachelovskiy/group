@@ -42,6 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
+
   /// Переход на Гланую страницу после паузы в 3 сек
   Future<void> _navigateToMainScreen() async {
     await Future.delayed(const Duration(seconds: 3));
