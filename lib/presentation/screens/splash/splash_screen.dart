@@ -1,11 +1,11 @@
 import 'dart:async';
 
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:group/core/constants/asset_provider.dart';
 import 'package:group/core/constants/string_provider.dart';
 import 'package:group/core/constants/ui_kit_colors.dart';
 import 'package:group/core/constants/ui_kit_text_style.dart';
-import 'package:group/presentation/screens/profile/profile_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -34,6 +34,8 @@ class _SplashScreenState extends State<SplashScreen> {
             const Spacer(),
             Center(child: Image.asset(AssetProvider.splashScreen)),
             const Spacer(),
+
+            /// добавил лоадер от себя, типа все ок и просто идет загрузка
             const CircularProgressIndicator(color: UiKitColors.red),
             const Spacer(),
           ],
@@ -46,8 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Future<void> _navigateToMainScreen() async {
     await Future.delayed(const Duration(seconds: 1));
     if (context.mounted) {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const ProfileScreen()));
+      context.router.pushNamed('/profile');
     }
   }
 }
