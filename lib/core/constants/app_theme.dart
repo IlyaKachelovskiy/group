@@ -6,9 +6,9 @@ class AppTheme {
         textSelectionTheme:
             const TextSelectionThemeData(cursorColor: UiKitColors.black),
         scaffoldBackgroundColor: UiKitColors.white,
-        // bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        //   backgroundColor: Colors.red,
-        //   type: BottomNavigationBarType.fixed,
-        // ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: UiKitColors.white,
+          type: BottomNavigationBarType.fixed,
+        ),
       );
 }
