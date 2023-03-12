@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:group/core/constants/ui_kit_colors.dart';
+import 'package:group/core/constants/ui_kit_dimen.dart';
 
 class BaseTextField extends TextField {
   BaseTextField({
@@ -16,11 +17,11 @@ class BaseTextField extends TextField {
                 const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(color: UiKitColors.mainGray),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(UiKitDimen.baseRadius),
             ),
             enabledBorder: UnderlineInputBorder(
               borderSide: const BorderSide(color: UiKitColors.mainGray),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(UiKitDimen.baseRadius),
             ),
           ),
         );
