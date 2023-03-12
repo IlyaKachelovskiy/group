@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:group/core/constants/asset_provider.dart';
 import 'package:group/core/constants/string_provider.dart';
+import 'package:group/core/constants/ui_kit_dimen.dart';
 import 'package:group/core/constants/ui_kit_text_style.dart';
 import 'package:group/presentation/base_widgets/base_text_field.dart';
 
@@ -12,17 +13,17 @@ class ProfileScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding:
+              const EdgeInsets.symmetric(horizontal: UiKitDimen.paddingMedium),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 88),
-
+              const SizedBox(height: UiKitDimen.baseTopPageMargin),
               Text(
                 StringProvider.profileScreenTitle,
                 style: UiKitTextStyle.splashScreenTitle,
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: UiKitDimen.heightSmall),
               Row(
                 children: [
                   SizedBox(
@@ -30,23 +31,24 @@ class ProfileScreen extends StatelessWidget {
                     height: 80,
                     child: Image.asset(AssetProvider.profileAvatar),
                   ),
-                  const SizedBox(width: 24),
+                  const SizedBox(width: UiKitDimen.widthMedium),
                   Flexible(
                     child: Text(
-                      'Введите своё имя и при желании добавьте фото профиля',
+                      StringProvider.profileScreenHintText,
                       style: UiKitTextStyle.description,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 24),
-              BaseTextField(hintText: 'Имя'),
-              const SizedBox(height: 12),
-              BaseTextField(hintText: 'Фамилия'),
-              const SizedBox(height: 12),
-              BaseTextField(hintText: 'Email'),
-              const SizedBox(height: 12),
-              BaseTextField(hintText: 'Номер телефона'),
+              const SizedBox(height: UiKitDimen.heightSmall),
+              BaseTextField(hintText: StringProvider.profileScreenFirstName),
+              const SizedBox(height: UiKitDimen.heightSmall),
+              BaseTextField(hintText: StringProvider.profileScreenLastName),
+              const SizedBox(height: UiKitDimen.heightSmall),
+              BaseTextField(hintText: StringProvider.profileScreenTitleEmail),
+              const SizedBox(height: UiKitDimen.heightSmall),
+              BaseTextField(
+                  hintText: StringProvider.profileScreenTitlePhoneNumber),
             ],
           ),
         ),
