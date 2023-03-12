@@ -5,8 +5,9 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(width: 111,height: 111,color: Colors.red,),
-    );
+    return const Scaffold(
+        body: Center(
+      child: Text('Вкладка Главная'),
+    ));
   }
 }
