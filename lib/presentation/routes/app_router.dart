@@ -4,12 +4,17 @@ import 'package:group/presentation/screens/favorites/favorites_screen.dart';
 import 'package:group/presentation/screens/main/main_screen.dart';
 import 'package:group/presentation/screens/profile/profile_screen.dart';
 import 'package:group/presentation/screens/search/search_screen.dart';
+import 'package:group/presentation/screens/splash/splash_screen.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
   routes: [
     AutoRoute(
       path: '/',
+      page: SplashScreen,
+    ),
+    AutoRoute(
+      path: 'dashboard',
       page: DashboardScreen,
       children: [
         AutoRoute(page: MainScreen, path: 'main'),

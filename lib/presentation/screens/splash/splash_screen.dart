@@ -48,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Future<void> _navigateToMainScreen() async {
     await Future.delayed(const Duration(seconds: 1));
     if (context.mounted) {
-      context.router.pushNamed('/profile');
+      context.router.pushNamed('dashboard');
     }
   }
 }
