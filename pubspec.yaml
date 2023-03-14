@@ -37,6 +37,10 @@ flutter:
       fonts:
         - asset: fonts/Mulish.ttf
 
+    - family: Mulish-Bold
+      fonts:
+        - asset: fonts/Mulish-Bold.ttf
+
   # fonts:
   #   - family: Schyler
   #     fonts:

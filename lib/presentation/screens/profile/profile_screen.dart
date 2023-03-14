@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(height: UiKitDimen.baseTopPageMargin),
               Text(
                 StringProvider.profileScreenTitle,
-                style: UiKitTextStyle.splashScreenTitle,
+                style: UiKitTextStyle.pageMainTitle,
               ),
               const SizedBox(height: UiKitDimen.heightSmall),
               Row(
