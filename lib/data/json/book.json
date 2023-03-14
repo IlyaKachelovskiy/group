@@ -1,10 +1,31 @@
 [
   {
     "id": 0,
-    "name": "Book1",
+    "name": "Дом дверей",
     "imageUrl": "https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop",
-    "dateOfIssue": "1111",
-    "author": "Me"
+    "dateOfIssue": "1990",
+    "author": "Браян Лемли"
+  },
+  {
+    "id": 1,
+    "name": "Совершенный код",
+    "imageUrl": "https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop",
+    "dateOfIssue": "2017",
+    "author": "Стив Макконнелл"
+  },
+  {
+    "id": 2,
+    "name": "Сияние",
+    "imageUrl": "https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop",
+    "dateOfIssue": "1977",
+    "author": "Стивен Кинг"
+  },
+  {
+    "id": 3,
+    "name": "Чистый код",
+    "imageUrl": "https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop",
+    "dateOfIssue": "2008",
+    "author": "Робер Мартин"
   }
 ]
 
