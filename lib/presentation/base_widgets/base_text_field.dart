@@ -13,8 +13,10 @@ class BaseTextField extends TextField {
             fillColor: UiKitColors.mainGray,
             hintText: hintText,
             hintStyle: const TextStyle(color: Colors.grey),
-            contentPadding:
-                const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: UiKitDimen.paddingMedium,
+              vertical: UiKitDimen.paddingMedium,
+            ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(color: UiKitColors.mainGray),
               borderRadius: BorderRadius.circular(UiKitDimen.baseRadius),
